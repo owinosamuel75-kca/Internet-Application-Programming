@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>KCA Student Academic Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h1>KCA University</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <h2>Student Academic Management System</h2>
+
+            <p>
+                Welcome to the KCA University Student Academic
+                Management System.
+            </p>
+
+            <p>
+                Manage your academic information, courses,
+                examination results and timetable in one place.
+            </p>
+
+            <a href="#services" class="button">
+                Get Started
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about">
+
+        <h2>About the System</h2>
+
+        <p>
+            The KCA Student Academic Management System is designed
+            to provide students with easy access to important
+            academic services and information.
+        </p>
+
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services">
+
+        <h2>Academic Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Student Registration</h3>
+                <p>
+                    Register and manage student academic information.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>Courses & Units</h3>
+                <p>
+                    View registered courses and academic units.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>Examination Results</h3>
+                <p>
+                    View examination results and academic performance.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>Timetable</h3>
+                <p>
+                    Access class and examination timetables.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>Announcements</h3>
+                <p>
+                    Receive important university academic announcements.
+                </p>
+            </div>
+
+
+            <div class="card">
+                <h3>Student Portal</h3>
+                <p>
+                    Access your personal academic information.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>Email: info@kca.ac.ke</p>
+
+        <p>Phone: +254 709 813 000</p>
+
+        <p>Location: Nairobi, Kenya</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 KCA Student Academic Management System
+        </p>
+
+    </footer>
+
+</body>
+</html>
