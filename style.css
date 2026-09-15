@@ -1,152 +1,234 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* KCA Student Academic Management System
+   Main Stylesheet
+*/
 
-    <title>KCA Student Academic Management System</title>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
 
-<body>
+/* Navigation Header */
+header {
+    background-color: #0b3d91;
+    color: white;
+    padding: 20px 50px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
 
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <h1>KCA University</h1>
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
 
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+header h1 {
+    font-size: 24px;
+}
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
 
-    <!-- Home Section -->
-    <section id="home" class="hero">
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
 
-        <div class="hero-content">
+nav ul li a:hover {
+    color: #ffd700;
+}
 
-            <h2>Student Academic Management System</h2>
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 25px;
+}
 
-            <p>
-                Welcome to the KCA University Student Academic
-                Management System.
-            </p>
+section {
+    background: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
 
-            <p>
-                Manage your academic information, courses,
-                examination results and timetable in one place.
-            </p>
+section h2 {
+    color: #0b3d91;
+    margin-bottom: 15px;
+}
 
-            <a href="#services" class="button">
-                Get Started
-            </a>
+/* Welcome Section */
+.hero {
+    background: linear-gradient(135deg, #0b3d91, #1769aa);
+    color: white;
+    padding: 50px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
 
-        </div>
+.hero h2 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
 
-    </section>
+.hero p {
+    font-size: 18px;
+}
 
+/* Buttons and Links */
+a {
+    color: #0b3d91;
+}
 
-    <!-- About Section -->
-    <section id="about">
+button,
+.btn {
+    display: inline-block;
+    background-color: #0b3d91;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
 
-        <h2>About the System</h2>
+button:hover,
+.btn:hover {
+    background-color: #072c6b;
+}
 
-        <p>
-            The KCA Student Academic Management System is designed
-            to provide students with easy access to important
-            academic services and information.
-        </p>
+/* Academic Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
 
-    </section>
+.service-card {
+    background-color: #f8f9fb;
+    border-left: 5px solid #0b3d91;
+    padding: 20px;
+    border-radius: 8px;
+}
 
+.service-card h3 {
+    color: #0b3d91;
+    margin-bottom: 10px;
+}
 
-    <!-- Services Section -->
-    <section id="services">
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
 
-        <h2>Academic Services</h2>
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
 
-        <div class="cards">
+table th {
+    background-color: #0b3d91;
+    color: white;
+}
 
-            <div class="card">
-                <h3>Student Registration</h3>
-                <p>
-                    Register and manage student academic information.
-                </p>
-            </div>
+table tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
 
+/* Forms */
+form {
+    max-width: 600px;
+    margin: auto;
+}
 
-            <div class="card">
-                <h3>Courses & Units</h3>
-                <p>
-                    View registered courses and academic units.
-                </p>
-            </div>
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
 
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
 
-            <div class="card">
-                <h3>Examination Results</h3>
-                <p>
-                    View examination results and academic performance.
-                </p>
-            </div>
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #0b3d91;
+    outline: none;
+}
 
+/* Footer */
+footer {
+    background-color: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
 
-            <div class="card">
-                <h3>Timetable</h3>
-                <p>
-                    Access class and examination timetables.
-                </p>
-            </div>
+footer p {
+    margin: 5px;
+}
 
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
 
-            <div class="card">
-                <h3>Announcements</h3>
-                <p>
-                    Receive important university academic announcements.
-                </p>
-            </div>
+    header {
+        padding: 20px;
+    }
 
+    header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-            <div class="card">
-                <h3>Student Portal</h3>
-                <p>
-                    Access your personal academic information.
-                </p>
-            </div>
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
 
-        </div>
+    main {
+        margin: 20px auto;
+        padding: 0 15px;
+    }
 
-    </section>
+    .hero h2 {
+        font-size: 25px;
+    }
 
-
-    <!-- Contact Section -->
-    <section id="contact">
-
-        <h2>Contact Us</h2>
-
-        <p>Email: info@kca.ac.ke</p>
-
-        <p>Phone: +254 709 813 000</p>
-
-        <p>Location: Nairobi, Kenya</p>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer>
-
-        <p>
-            &copy; 2026 KCA Student Academic Management System
-        </p>
-
-    </footer>
-
-</body>
-</html>
+    section {
+        padding: 20px;
+    }
+}
